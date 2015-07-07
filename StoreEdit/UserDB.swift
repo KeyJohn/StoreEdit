@@ -41,6 +41,24 @@ class UserDB: NSObject, EGODatabaseRequestDelegate{
         //3.关闭数据库
         database.close()
     }
+    
+    //删除一个用户
+    func deleteUser(user: UserModel){
+        //创建EGODatabase实例
+        let database = EGODatabase(path: sqlite_file)
+        //1.打开数据库
+        database.open()
+        
+        
+        //2.操作
+        let sql = "delete from user where username = ?"
+        let params = [user.username!]
+        database.executeUpdate(sql, parameters: params)
+        
+        //3.关闭数据库
+        database.close()
+    }
+
 
     //查询用户
     func finderUser(comlitionHandle: [AnyObject?] -> ()) {

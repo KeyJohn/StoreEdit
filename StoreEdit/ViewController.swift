@@ -12,6 +12,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var myTable: UITableView!
     
+    @IBAction func editorAction(sender: UIButton) {
+        sender.selected = !sender.selected
+        self.myTable.editing = sender.selected
+    }
+    
     var dataList = [AnyObject?]()
     
     override func viewDidLoad() {
@@ -88,7 +93,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
 
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        return [UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "delete", handler: { (action, indexPath) -> Void in
+            
+            let userModel = self.dataList[indexPath.row] as! UserModel
+            
+            let ud = UserDB.shareUserDB
+            ud.deleteUser(userModel)
+            self.refreshUI()
+        })]
+    }
 
+    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+//        if indexPath.row == 0 {
+//            return UITableViewCellEditingStyle.Delete
+//        }else if indexPath.row == 1 {
+//            return UITableViewCellEditingStyle.Insert
+//        }else {
+//            return UITableViewCellEditingStyle.None
+//        }
+        return UITableViewCellEditingStyle.Delete
+    }
 
 }
 
