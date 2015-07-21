@@ -55,6 +55,8 @@ class UserDB: NSObject, EGODatabaseRequestDelegate{
         let params = [user.username!]
         database.executeUpdate(sql, parameters: params)
         
+        
+        
         //3.关闭数据库
         database.close()
     }
