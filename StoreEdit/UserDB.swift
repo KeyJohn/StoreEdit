@@ -14,6 +14,8 @@ class UserDB: NSObject, EGODatabaseRequestDelegate{
     
     let sqlite_file = NSHomeDirectory().stringByAppendingString("/Documents/mydatabase1.sqlite")
     
+    
+    //构建单例方法
     class var shareUserDB: UserDB{
         struct Static {
             static var onceToken: dispatch_once_t = 0
