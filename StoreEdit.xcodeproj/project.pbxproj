@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651842B71B7B68F100F2B4E6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 651842B61B7B68F100F2B4E6 /* libsqlite3.tbd */; };
 		655F0C721B4A6C9A002F51ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0C711B4A6C9A002F51ED /* AppDelegate.swift */; };
 		655F0C741B4A6C9A002F51ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0C731B4A6C9A002F51ED /* ViewController.swift */; };
 		655F0C771B4A6C9A002F51ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655F0C751B4A6C9A002F51ED /* Main.storyboard */; };
@@ -22,7 +23,6 @@
 		655F0CB31B4A8706002F51ED /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CAD1B4A8706002F51ED /* EGODatabaseResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		655F0CB41B4A8706002F51ED /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CAF1B4A8706002F51ED /* EGODatabaseRow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		655F0CB51B4A8706002F51ED /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CB01B4A8706002F51ED /* README.markdown */; };
-		655F0CB81B4A88D6002F51ED /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 655F0CB71B4A88D6002F51ED /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		651842B61B7B68F100F2B4E6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		655F0C6E1B4A6C9A002F51ED /* StoreEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655F0C711B4A6C9A002F51ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655F0C731B4A6C9A002F51ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		655F0CAF1B4A8706002F51ED /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
 		655F0CB01B4A8706002F51ED /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		655F0CB61B4A8766002F51ED /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		655F0CB71B4A88D6002F51ED /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				655F0CB81B4A88D6002F51ED /* libsqlite3.tbd in Frameworks */,
+				651842B71B7B68F100F2B4E6 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 		655F0C651B4A6C9A002F51ED = {
 			isa = PBXGroup;
 			children = (
-				655F0CB71B4A88D6002F51ED /* libsqlite3.tbd */,
+				651842B61B7B68F100F2B4E6 /* libsqlite3.tbd */,
 				655F0C701B4A6C9A002F51ED /* StoreEdit */,
 				655F0C851B4A6C9A002F51ED /* StoreEditTests */,
 				655F0C901B4A6C9A002F51ED /* StoreEditUITests */,
@@ -553,6 +553,7 @@
 				655F0C981B4A6C9A002F51ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		655F0C991B4A6C9A002F51ED /* Build configuration list for PBXNativeTarget "StoreEditTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +562,7 @@
 				655F0C9B1B4A6C9A002F51ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		655F0C9C1B4A6C9A002F51ED /* Build configuration list for PBXNativeTarget "StoreEditUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +571,7 @@
 				655F0C9E1B4A6C9A002F51ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
