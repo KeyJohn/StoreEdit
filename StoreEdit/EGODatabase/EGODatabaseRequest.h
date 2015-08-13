@@ -36,6 +36,11 @@ typedef enum {
 	EGODatabaseSelectRequest
 } EGODatabaseRequestKind;
 
+@class EGODatabaseResult;
+//异步查询之后调用的block
+typedef void(^CompletionBlock)(EGODatabaseResult *result);
+typedef void(^FailBlock)(NSError *error);
+
 @class EGODatabase, EGODatabaseResult;
 @protocol EGODatabaseRequestDelegate;
 @interface EGODatabaseRequest : NSOperation {
@@ -55,6 +60,9 @@ typedef enum {
 @property(nonatomic,retain) EGODatabase* database;
 @property(nonatomic,assign) EGODatabaseRequestKind requestKind;
 @property(nonatomic,assign) id<EGODatabaseRequestDelegate> delegate;
+
+@property(nonatomic,copy)CompletionBlock successBlock;
+@property(nonatomic,copy)FailBlock failBlock;
 @end
 
 @protocol EGODatabaseRequestDelegate<NSObject>

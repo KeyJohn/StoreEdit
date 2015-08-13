@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		651842B71B7B68F100F2B4E6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 651842B61B7B68F100F2B4E6 /* libsqlite3.tbd */; };
+		651842C21B7BB0F900F2B4E6 /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 651842BA1B7BB0F900F2B4E6 /* EGODatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		651842C31B7BB0F900F2B4E6 /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 651842BC1B7BB0F900F2B4E6 /* EGODatabaseRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		651842C41B7BB0F900F2B4E6 /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 651842BE1B7BB0F900F2B4E6 /* EGODatabaseResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		651842C51B7BB0F900F2B4E6 /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 651842C01B7BB0F900F2B4E6 /* EGODatabaseRow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		651842C61B7BB0F900F2B4E6 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 651842C11B7BB0F900F2B4E6 /* README.markdown */; };
 		655F0C721B4A6C9A002F51ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0C711B4A6C9A002F51ED /* AppDelegate.swift */; };
 		655F0C741B4A6C9A002F51ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0C731B4A6C9A002F51ED /* ViewController.swift */; };
 		655F0C771B4A6C9A002F51ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655F0C751B4A6C9A002F51ED /* Main.storyboard */; };
@@ -18,11 +22,6 @@
 		655F0CA01B4A6D4B002F51ED /* mydatabase1.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 655F0C9F1B4A6D4B002F51ED /* mydatabase1.sqlite */; };
 		655F0CA31B4A706C002F51ED /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CA21B4A706C002F51ED /* UserModel.swift */; };
 		655F0CA61B4A7149002F51ED /* UserDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CA51B4A7149002F51ED /* UserDB.swift */; };
-		655F0CB11B4A8706002F51ED /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CA91B4A8706002F51ED /* EGODatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		655F0CB21B4A8706002F51ED /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CAB1B4A8706002F51ED /* EGODatabaseRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		655F0CB31B4A8706002F51ED /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CAD1B4A8706002F51ED /* EGODatabaseResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		655F0CB41B4A8706002F51ED /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CAF1B4A8706002F51ED /* EGODatabaseRow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		655F0CB51B4A8706002F51ED /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 655F0CB01B4A8706002F51ED /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		651842B61B7B68F100F2B4E6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		651842B91B7BB0F900F2B4E6 /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
+		651842BA1B7BB0F900F2B4E6 /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
+		651842BB1B7BB0F900F2B4E6 /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
+		651842BC1B7BB0F900F2B4E6 /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
+		651842BD1B7BB0F900F2B4E6 /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
+		651842BE1B7BB0F900F2B4E6 /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
+		651842BF1B7BB0F900F2B4E6 /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
+		651842C01B7BB0F900F2B4E6 /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
+		651842C11B7BB0F900F2B4E6 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		655F0C6E1B4A6C9A002F51ED /* StoreEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655F0C711B4A6C9A002F51ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655F0C731B4A6C9A002F51ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,15 +67,6 @@
 		655F0C9F1B4A6D4B002F51ED /* mydatabase1.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mydatabase1.sqlite; sourceTree = "<group>"; };
 		655F0CA21B4A706C002F51ED /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		655F0CA51B4A7149002F51ED /* UserDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDB.swift; sourceTree = "<group>"; };
-		655F0CA81B4A8706002F51ED /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
-		655F0CA91B4A8706002F51ED /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
-		655F0CAA1B4A8706002F51ED /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
-		655F0CAB1B4A8706002F51ED /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
-		655F0CAC1B4A8706002F51ED /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
-		655F0CAD1B4A8706002F51ED /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
-		655F0CAE1B4A8706002F51ED /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
-		655F0CAF1B4A8706002F51ED /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
-		655F0CB01B4A8706002F51ED /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		655F0CB61B4A8766002F51ED /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651842B71B7B68F100F2B4E6 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,10 +95,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		651842B81B7BB0F900F2B4E6 /* EGODatabase */ = {
+			isa = PBXGroup;
+			children = (
+				651842B91B7BB0F900F2B4E6 /* EGODatabase.h */,
+				651842BA1B7BB0F900F2B4E6 /* EGODatabase.m */,
+				651842BB1B7BB0F900F2B4E6 /* EGODatabaseRequest.h */,
+				651842BC1B7BB0F900F2B4E6 /* EGODatabaseRequest.m */,
+				651842BD1B7BB0F900F2B4E6 /* EGODatabaseResult.h */,
+				651842BE1B7BB0F900F2B4E6 /* EGODatabaseResult.m */,
+				651842BF1B7BB0F900F2B4E6 /* EGODatabaseRow.h */,
+				651842C01B7BB0F900F2B4E6 /* EGODatabaseRow.m */,
+				651842C11B7BB0F900F2B4E6 /* README.markdown */,
+			);
+			path = EGODatabase;
+			sourceTree = "<group>";
+		};
 		655F0C651B4A6C9A002F51ED = {
 			isa = PBXGroup;
 			children = (
-				651842B61B7B68F100F2B4E6 /* libsqlite3.tbd */,
 				655F0C701B4A6C9A002F51ED /* StoreEdit */,
 				655F0C851B4A6C9A002F51ED /* StoreEditTests */,
 				655F0C901B4A6C9A002F51ED /* StoreEditUITests */,
@@ -122,7 +134,7 @@
 		655F0C701B4A6C9A002F51ED /* StoreEdit */ = {
 			isa = PBXGroup;
 			children = (
-				655F0CA71B4A8706002F51ED /* EGODatabase */,
+				651842B81B7BB0F900F2B4E6 /* EGODatabase */,
 				655F0C9F1B4A6D4B002F51ED /* mydatabase1.sqlite */,
 				655F0C711B4A6C9A002F51ED /* AppDelegate.swift */,
 				655F0C731B4A6C9A002F51ED /* ViewController.swift */,
@@ -169,22 +181,6 @@
 				655F0CA51B4A7149002F51ED /* UserDB.swift */,
 			);
 			name = DataBase;
-			sourceTree = "<group>";
-		};
-		655F0CA71B4A8706002F51ED /* EGODatabase */ = {
-			isa = PBXGroup;
-			children = (
-				655F0CA81B4A8706002F51ED /* EGODatabase.h */,
-				655F0CA91B4A8706002F51ED /* EGODatabase.m */,
-				655F0CAA1B4A8706002F51ED /* EGODatabaseRequest.h */,
-				655F0CAB1B4A8706002F51ED /* EGODatabaseRequest.m */,
-				655F0CAC1B4A8706002F51ED /* EGODatabaseResult.h */,
-				655F0CAD1B4A8706002F51ED /* EGODatabaseResult.m */,
-				655F0CAE1B4A8706002F51ED /* EGODatabaseRow.h */,
-				655F0CAF1B4A8706002F51ED /* EGODatabaseRow.m */,
-				655F0CB01B4A8706002F51ED /* README.markdown */,
-			);
-			path = EGODatabase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,14 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				655F0CB11B4A8706002F51ED /* EGODatabase.m in Sources */,
+				651842C21B7BB0F900F2B4E6 /* EGODatabase.m in Sources */,
 				655F0CA61B4A7149002F51ED /* UserDB.swift in Sources */,
 				655F0C741B4A6C9A002F51ED /* ViewController.swift in Sources */,
-				655F0CB41B4A8706002F51ED /* EGODatabaseRow.m in Sources */,
+				651842C51B7BB0F900F2B4E6 /* EGODatabaseRow.m in Sources */,
 				655F0CA31B4A706C002F51ED /* UserModel.swift in Sources */,
-				655F0CB51B4A8706002F51ED /* README.markdown in Sources */,
-				655F0CB21B4A8706002F51ED /* EGODatabaseRequest.m in Sources */,
-				655F0CB31B4A8706002F51ED /* EGODatabaseResult.m in Sources */,
+				651842C61B7BB0F900F2B4E6 /* README.markdown in Sources */,
+				651842C31B7BB0F900F2B4E6 /* EGODatabaseRequest.m in Sources */,
+				651842C41B7BB0F900F2B4E6 /* EGODatabaseResult.m in Sources */,
 				655F0C721B4A6C9A002F51ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
