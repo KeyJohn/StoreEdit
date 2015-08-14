@@ -54,8 +54,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             userModel.password = passwordTF.text
             userModel.age = ageTF.text
             
-            let ud = UserDB.shareUserDB
-            ud.addUser(userModel)
+//            let ud = UserDB.shareUserDB
+//            ud.addUser(userModel)
             
             //刷新UI
             self.refreshUI()
@@ -73,11 +73,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //刷新UI
     func refreshUI() {
-        let ud = UserDB.shareUserDB
-        ud.finderUser { (users: [AnyObject?]) -> () in
-            self.dataList = users
-            self.myTable.reloadData()
-        }
+//        let ud = UserDB.shareUserDB
+//        ud.finderUser { (users: [AnyObject?]) -> () in
+//            self.dataList = users
+//            self.myTable.reloadData()
+//        }
     }
     
     
@@ -98,8 +98,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             let userModel = self.dataList[indexPath.row] as! UserModel
             
-            let ud = UserDB.shareUserDB
-            ud.deleteUser(userModel)
+//            let ud = UserDB.shareUserDB
+//            ud.deleteUser(userModel)
             self.refreshUI()
         })]
     }

@@ -98,33 +98,18 @@
 }
 
 - (void)didSucceedWithResult:(EGODatabaseResult*)result {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if(delegate && [delegate respondsToSelector:@selector(requestDidSucceed:withResult:)]) {
-            [delegate requestDidSucceed:self withResult:result];
-        }
-        //回调block
-        if (self.successBlock != nil) {
-            self.successBlock(result);
-        }
-    });
-    
+	if(delegate && [delegate respondsToSelector:@selector(requestDidSucceed:withResult:)]) {
+		[delegate requestDidSucceed:self withResult:result];
+	}
 }
 
 - (void)didFailWithError:(NSError*)error {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if(delegate && [delegate respondsToSelector:@selector(requestDidFail:withError:)]) {
-            [delegate requestDidFail:self withError:error];
-        }
-        //回调block
-        if (self.failBlock != nil) {
-            self.failBlock(error);
-        }
-    });
+	if(delegate && [delegate respondsToSelector:@selector(requestDidFail:withError:)]) {
+		[delegate requestDidFail:self withError:error];
+	}
 }
 
 - (void)dealloc {
-    Block_release(_successBlock);
-    Block_release(_failBlock);
 	[parameters release];
 	[database release];
 	[super dealloc];
