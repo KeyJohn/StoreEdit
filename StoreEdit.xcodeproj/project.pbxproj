@@ -68,7 +68,8 @@
 		659222BB1B7E370E0026D628 /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
 		659222BC1B7E370E0026D628 /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
 		659222BD1B7E370E0026D628 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
-		659222C31B7E37500026D628 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = file; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		659222C31B7E37500026D628 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		65A2CA811B7EEDA500874599 /* MyBrige.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBrige.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 				655F0CA41B4A7113002F51ED /* DataBase */,
 				655F0CA11B4A7050002F51ED /* Models */,
 				655F0C751B4A6C9A002F51ED /* Main.storyboard */,
+				65A2CA811B7EEDA500874599 /* MyBrige.h */,
 				655F0C781B4A6C9A002F51ED /* Assets.xcassets */,
 				655F0C7A1B4A6C9A002F51ED /* LaunchScreen.storyboard */,
 				655F0C7D1B4A6C9A002F51ED /* Info.plist */,
@@ -417,10 +419,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/StoreEdit/MyBrige.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -457,7 +460,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/StoreEdit/MyBrige.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
