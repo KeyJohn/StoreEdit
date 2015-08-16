@@ -114,6 +114,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        }
         return UITableViewCellEditingStyle.Delete
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
 
 }
 
