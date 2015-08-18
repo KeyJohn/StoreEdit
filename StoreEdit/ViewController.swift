@@ -104,15 +104,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         })]
     }
 
+    
     func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
-        if indexPath.row == 0 {
-            return UITableViewCellEditingStyle.Delete
-        }else if indexPath.row == 1 {
-            return UITableViewCellEditingStyle.Insert
-        }else {
-            return UITableViewCellEditingStyle.None
-        }
-//        return UITableViewCellEditingStyle.Delete
+//        if indexPath.row == 0 {
+//            return UITableViewCellEditingStyle.Delete
+//        }else if indexPath.row == 1 {
+//            return UITableViewCellEditingStyle.Insert
+//        }else {
+//            return UITableViewCellEditingStyle.None
+//        }
+        return UITableViewCellEditingStyle.Delete
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
